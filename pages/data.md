@@ -43,6 +43,12 @@ Comprehensive collection of standardized single neuron tracings mapped to the mo
   <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQm7HfR0nVxYIO_ZKh7UedEdUToooVwJqzjrAz3IsrnGgIc9omkbUEBtK-IJT4JzA/pubhtml?widget=true&amp;headers=false" width="100%" height="400"></iframe>
 </div>
 
+#### Dong lab local neurons
+
+<div style="overflow:auto; width:100%; height:auto; max-height:500px;">
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSSQhhscYlcDYUTTED76-DQjXVlQR3JbLAiD4_3gYu0KnL6n67YTfHKX3lw6EMzEw/pubhtml?widget=true&amp;headers=false" width="100%" height="400"></iframe>
+</div>
+
 
 ## Access
 All datasets are available under XYZ license.
