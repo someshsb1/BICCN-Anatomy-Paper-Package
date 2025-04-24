@@ -32,7 +32,7 @@ Datasets and associated metadata hosted at BIL. Please, be patient, the table ta
   <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRm5EPXR5KFTLDFm_AQrKNYW3Afmt4YAZoJ24TA1ignPjT_s5s572wCknyrSVfz0Q/pubhtml?widget=true&amp;headers=false" width="100%" height="400"></iframe>
 </div>
 
-## Neuron Reconstruction
+## Neuron Tracings
 Comprehensive collection of standardized single neuron tracings mapped to the mouse brain Common Coordinate Framework v3 (CCFv3).
 
 ### Local neuron tracings
