@@ -18,7 +18,7 @@ title: Data Sets
   - Full neuron tracings
      
 ## Brain Image Library raw datasets
-Datasets and associated metadata hosted at BIL.
+Datasets and associated metadata hosted at BIL. Please, be patient, the table takes a few seconds to load.
 
 <div style="overflow:auto; width:100%; height:auto; max-height:500px;">
   <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuiUW-p28F0GpCYFIm930w159_WEinihfiDwL_d0ZPYdre_ckp_0WaGF40_GqTRkg_Izc_X7rqq870/pubhtml?widget=true&amp;headers=false" width="100%" height="400"></iframe>
