@@ -7,8 +7,9 @@ title: Data Sets
 
 ## Categories
 - Raw Whole Brain Imaging Data
-  - CT scans
-  - fMOST scans
+  - STPT
+  - fMOST
+  - Light sheet
   - ...
   
 - Processed Data
@@ -20,7 +21,9 @@ title: Data Sets
 ## Brain Image Library raw datasets
 Datasets and associated metadata hosted at BIL.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuiUW-p28F0GpCYFIm930w159_WEinihfiDwL_d0ZPYdre_ckp_0WaGF40_GqTRkg_Izc_X7rqq870/pubhtml?widget=true&amp;headers=false" width="100%" height="400"></iframe>
+<div style="overflow:auto; width:100%; height:auto; max-height:500px;">
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuiUW-p28F0GpCYFIm930w159_WEinihfiDwL_d0ZPYdre_ckp_0WaGF40_GqTRkg_Izc_X7rqq870/pubhtml?widget=true&amp;headers=false" width="100%" height="400"></iframe>
+</div>
 
 ## Tract traces
 ...
