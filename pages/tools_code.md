@@ -6,6 +6,9 @@ title: Tools & Code
 # Code Resources
 
 ## Data portals
+- NeuroXiv.org
+- HortaCloud.janelia.org
+- Brain Architecture Portal
 
 ## Registration Framework
 Tools and utilities for registering your data with our mouse reference atlas.
