@@ -36,6 +36,6 @@ Datasets and associated metadata hosted at BIL. Please, be patient, the table ta
 Comprehensive collection of standardized single neuron tracings mapped to the mouse brain Common Coordinate Framework v3 (CCFv3).
 
 ## Access
-All datasets are available under GNU GPL v3 license.
+All datasets are available under XYZ license.
 
 [Browse Datasets](#) | [Download Instructions](#) | [Usage Guidelines](#)
