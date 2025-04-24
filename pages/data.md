@@ -5,21 +5,29 @@ title: Data Sets
 
 # Available Data Sets
 
-## Mouse Head Imaging Data
-Comprehensive collection of standardized datasets for the Brain Architecture Project.
-
-### Categories
-- Raw Imaging Data
-  - MRI scans
+## Categories
+- Raw Whole Brain Imaging Data
   - CT scans
-  - Histology images
+  - fMOST scans
+  - ...
   
 - Processed Data
-  - Segmentation maps
-  - Registration results
-  - Feature maps
+  - Tract traces
+  - Cell locations
+  - Local neuron tracings
+  - Full neuron tracings
+     
+## Brain Image Library raw datasets
+Datasets and associated metadata hosted at BIL.
 
-### Access
+
+## Tract traces
+...
+
+## Neuron Reconstruction
+Comprehensive collection of standardized single neuron tracings mapped to the mouse brain Common Coordinate Framework v3 (CCFv3).
+
+## Access
 All datasets are available under GNU GPL v3 license.
 
 [Browse Datasets](#) | [Download Instructions](#) | [Usage Guidelines](#)
