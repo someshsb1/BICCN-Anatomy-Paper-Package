@@ -24,7 +24,7 @@ Datasets and associated metadata hosted at BIL. Please, be patient, the table ta
   <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuiUW-p28F0GpCYFIm930w159_WEinihfiDwL_d0ZPYdre_ckp_0WaGF40_GqTRkg_Izc_X7rqq870/pubhtml?widget=true&amp;headers=false" width="100%" height="400"></iframe>
 </div>
 
-<a href="https://github.com/ppmitra/BICCN-Anatomy-Paper-Package/blob/main/assets/3_BIL_datasets/Snapshot_2024-01-02_%20summarymetadata_BICCN.xlsx" download class="btn btn-primary">
+<a href="https://raw.githubusercontent.com/ppmitra/BICCN-Anatomy-Paper-Package/blob/main/assets/3_BIL_datasets/Snapshot_2024-01-02_%20summarymetadata_BICCN.xlsx" download class="btn btn-primary">
   📄 Download Table
 </a>
 
