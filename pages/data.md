@@ -35,6 +35,15 @@ Datasets and associated metadata hosted at BIL. Please, be patient, the table ta
 ## Neuron Reconstruction
 Comprehensive collection of standardized single neuron tracings mapped to the mouse brain Common Coordinate Framework v3 (CCFv3).
 
+### Local neuron tracings
+
+#### Yang lab dendritome
+
+<div style="overflow:auto; width:100%; height:auto; max-height:500px;">
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQm7HfR0nVxYIO_ZKh7UedEdUToooVwJqzjrAz3IsrnGgIc9omkbUEBtK-IJT4JzA/pubhtml?widget=true&amp;headers=false" width="100%" height="400"></iframe>
+</div>
+
+
 ## Access
 All datasets are available under XYZ license.
 
