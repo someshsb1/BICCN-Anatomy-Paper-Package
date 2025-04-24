@@ -14,7 +14,6 @@ title: Data Sets
   
 - Processed Data
   - Tract traces
-  - Cell locations
   - Local neuron tracings
   - Full neuron tracings
      
