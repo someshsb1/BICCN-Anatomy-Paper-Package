@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categories</title>
+    <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <style>
+  .nav-link {
+    color: #fff;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Rockwell', sans-serif;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #ff4081;
+  }
+</style>
+
+<header style="background: #111; padding: 1rem 2rem; position: sticky; top: 0; z-index: 999;">
+  <nav style="display: flex; justify-content: space-between; align-items: center; max-width: 100%; margin: 0 auto;">
+<div style="display: flex; align-items: center;">
+  <a href="/" style="display: flex; align-items: center;">
+    <img src="/images/brain_architecture_logo_white.svg" alt="Brain Architecture Project" style="height: 60px;"/>
+  </a>
+</div>
+    <div>
+      <a href="/" class="nav-link ">Home</a>
+      <a href="/papers/" class="nav-link ">Papers</a>
+      <a href="/data/" class="nav-link ">Data</a>
+      <a href="/tools_code/" class="nav-link ">Tools</a>
+      <a href="/usecases/" class="nav-link ">Use Cases</a>
+    </div>
+  </nav>
+</header>
+
+
+  <main style="max-width: 100%; margin: 3rem auto; padding: 0 1rem;">
+    
+    
+  <article class="cf pa3 pa4-m pa4-l">
+    <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links mid-gray">
+      
+    </div>
+  </article>
+  <div class="mw8 center">
+    <section class="ph4">
+      
+    </section>
+  </div>
+
+  </main>
+
+  <footer style="background: #111; color: #ccc; padding: 2rem 1rem; font-size: 0.9rem;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; text-align: center;">
+
+    
+    <div style="flex: 1 1 300px;">
+      <p style="margin: 0; font-weight: 500;">
+        © 2025 BICCN Anatomy. All rights reserved.
+      </p>
+    </div>
+
+    
+    <div style="flex: 1 1 300px; text-align: center;">
+      <a href="https://github.com/ppmitra/BICCN-Anatomy-Paper-Package" target="_blank" style="color: #ccc; margin: 0 0.75rem; text-decoration: none;">GitHub</a>
+      <a href="/privacy/" style="color: #ccc; margin: 0 0.75rem; text-decoration: none;">Privacy</a>
+      <a href="/contact/" style="color: #ccc; margin: 0 0.75rem; text-decoration: none;">Contact</a>
+    </div>
+
+  </div>
+</footer>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toggles = document.querySelectorAll(".toggle-header");
+  toggles.forEach((header) => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      content.style.display = content.style.display === "none" ? "block" : "none";
+      header.classList.toggle("open");
+    });
+  });
+});
+</script>
+<style>
+.toggle-header {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background: #f4f4f4;
+  border-left: 6px solid #007acc;
+  margin: 1.5rem 0 0.5rem;
+  font-weight: bold;
+}
+.toggle-header.open {
+  background: #e0f0ff;
+}
+.toggle-content {
+  display: none;
+  padding: 0.5rem 1rem;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+</style>
+
+
+</body>
+</html>

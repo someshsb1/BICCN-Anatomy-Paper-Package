@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://braincircuits.info/data/</loc>
+  </url><url>
+    <loc>http://braincircuits.info/categories/</loc>
+  </url><url>
+    <loc>http://braincircuits.info/papers/</loc>
+  </url><url>
+    <loc>http://braincircuits.info/tags/</loc>
+  </url><url>
+    <loc>http://braincircuits.info/</loc>
+  </url><url>
+    <loc>http://braincircuits.info/tools_code/</loc>
+  </url>
+</urlset>
