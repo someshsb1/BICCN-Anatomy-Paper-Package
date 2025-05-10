@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=53614&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Papers</title>
+    <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <style>
+  .nav-link {
+    color: #fff;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Rockwell', sans-serif;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #ff4081;
+  }
+</style>
+
+<header style="background: #111; padding: 1rem 2rem; position: sticky; top: 0; z-index: 999;">
+  <nav style="display: flex; justify-content: space-between; align-items: center; max-width: 100%; margin: 0 auto;">
+<div style="display: flex; align-items: center;">
+  <a href="/" style="display: flex; align-items: center;">
+    <img src="/images/brain_architecture_logo_white.svg" alt="Brain Architecture Project" style="height: 60px;"/>
+  </a>
+</div>
+    <div>
+      <a href="/" class="nav-link ">Home</a>
+      <a href="/papers/" class="nav-link active">Papers</a>
+      <a href="/data/" class="nav-link ">Data</a>
+      <a href="/tools_code/" class="nav-link ">Tools</a>
+      <a href="/usecases/" class="nav-link ">Use Cases</a>
+    </div>
+  </nav>
+</header>
+
+
+  <main style="max-width: 100%; margin: 3rem auto; padding: 0 1rem;">
+    
+  
+<!-- AOS Scroll Animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+
+
+    <section style="margin: 3rem 0;">
+      <h2 style="font-size: 1.6rem; color: #1a237e;">Brain-wide Connectivity & Projection Pattern (mesoscale resolution)</h2>
+      <p style="font-size: 0.95rem; color: #444;">These papers collectively advance our understanding of brain-wide neural connectivity through multiple complementary approaches. They leverage cutting-edge methodologies including traditional neuronal tracing, molecular barcoding, in situ sequencing, and computational analyses to systematically map neural projections across brain regions. Together, they reveal detailed circuit architectures, region-specific connectivity patterns, and organizational principles of neural networks, creating comprehensive mesoscale connectivity maps in both mouse and marmoset brains.</p>
+      <h3 style="font-size: 1.2rem; color: #303f9f;">Computational Analysis & Pattern Extraction</h3>
+      <p style="font-size: 0.95rem; color: #444;">Papers [1, 2] implement advanced computational approaches to analyze neuronal morphology and connectivity patterns, introducing novel methods like Discrete Morse Theory for extracting tree-skeletons and unsupervised classification algorithms for identifying projection neuron types. They transform complex anatomical data into interpretable structures that reveal connectivity and branching patterns. </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">1) Detection and skeletonization of single neurons and tracer injections using topological methods</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study introduces Discrete Morse Theory to extract tree-skeletons of individual neurons and summarize collections of neurons, offering improved performance over traditional methods and providing a richer, topologically-informed summary of regional connectivity and branching patterns.</p>
+          <a href='https://drive.google.com/file/d/18j9INC3EezbS2QFC_pnQKZfGMpxGPxVd/view?usp=drive_link' target='_blank' style='color:#0d47a1; font-weight: bold;'>Read More</a>
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">2) Unsupervised classification of brain-wide axons reveals the presubiculum neuronal projection blueprint</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study presents a quantitative approach to identifying projection neuron types with distinct anatomical targeting patterns. Applied to the mouse primary motor cortex and presubiculum, the method uncovers neuron classes with unique projection characteristics, such as divergence, convergence, and specificity. Findings reveal that certain classes target multiple subregions with defined functions and show topographic segregation within the presubiculum, providing insights into the functional organization of neural circuits.</p>
+          <a href='https://drive.google.com/file/d/1l6tTQgpvZud-4xyja1xXNeLB1w9t6Pk_/view' target='_blank' style='color:#0d47a1; font-weight: bold;'>Read More</a>
+        </div>
+        </div></section>
+
+    <section style="margin: 3rem 0;">
+      <h3 style="font-size: 1.2rem; color: #303f9f;">Circuit & Network Organization</h3>
+      <p style="font-size: 0.95rem; color: #444;">Papers [3, 4] map specialized network architectures within key brain regions, detailing the organizational principles of neural circuits in the mouse visceromotor cortex and caudoputamen. They reveal distinct network topologies, domain specializations, and parallel integration pathways for cortical and subcortical inputs, identifying region-specific zones based on gene expression patterns. </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">3) Neural Networks of the Mouse Primary Visceromotor Cortex</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study maps the medial prefrontal cortex (MPF) circuitry, highlighting the dorsal peduncular area (DP) as a key hub integrating cortical inputs to regulate stress, emotion, and goal-directed behaviors. By defining distinct MPF network components, the study proposes a unified model linking visceromotor control to social and behavioral responses.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">4) Genoarchitecture and input-output connections of the mouse basal ganglia and thalamic parafascicular nucleus</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study maps the transcriptomic cell types (t-types) and connectivity of the basal ganglia and thalamic parafascicular nucleus (PF), revealing distinct spatial subdivisions that align with module-specific input-output pathways. By integrating multimodal datasets into the Allen Mouse Brain CCFv3, the findings suggest that combinatorial gene expression patterns shape the parallel and integrative processing of motor, cognitive, and emotional functions in the basal ganglia-PF network.</p>
+          
+        </div>
+        </div></section>
+
+    <section style="margin: 3rem 0;">
+      <h3 style="font-size: 1.2rem; color: #303f9f;">Molecular Barcoding & In Situ Sequencing</h3>
+      <p style="font-size: 0.95rem; color: #444;">Papers [5, 6] map specialized network architectures within key brain regions, detailing the organizational principles of neural circuits in the mouse visceromotor cortex and caudoputamen. They reveal distinct network topologies, domain specializations, and parallel integration pathways for cortical and subcortical inputs, identifying region-specific zones based on gene expression patterns.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">5) Massive Multiplexing of Spatially Resolved Single Neuron Projections with Axonal BARseq</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study introduces axonal BARseq, a high-throughput method using in situ RNA sequencing to map long-range projections of thousands of neurons, enabling detailed analysis of axonal trajectories and cell type diversity in the mouse primary auditory cortex.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">6) Modular cell type organization of cortical areas revealed by in situ sequencing</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study uses BARseq, a high-throughput in situ sequencing technique, to map the transcriptomic signatures of 1.2 million cells in the mouse forebrain, revealing that cortical areas are defined by specific gene expression patterns and that areas with similar cell type compositions are more likely to be interconnected, offering a new "wire-by-similarity" principle for cortical connectivity.</p>
+          
+        </div>
+        </div></section>
+
+    <section style="margin: 3rem 0;">
+      <h3 style="font-size: 1.2rem; color: #303f9f;">Tracing & Anatomical Methods</h3>
+      <p style="font-size: 0.95rem; color: #444;">Papers [7, 8, 9]  implement systematic anatomical tracing approaches to map neural projections across species and brain regions. Using combinatorial retrograde tracing, high-throughput neurohistological pipelines, and viral tracing, they quantitatively map connectivity patterns in mouse and marmoset brains, revealing detailed organization of circuits like the cortico-basal ganglia-thalamic system. </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">7) Combinatorial quantification of distinct neural projections from retrograde tracing</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study presents a combinatorial approach to quantifying distinct neural projections using retrograde tracing, enabling detailed mapping of connectivity patterns.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">8) A high-throughput neurohistological pipeline for brain-wide mesoscale connectivity mapping of the common marmoset</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study presents an integrated neuro-histological pipeline and grid-based tracer injection strategy for systematic mesoscale connectivity mapping in the marmoset brain, enabling high-resolution 3D reconstructions and accurate atlas alignment despite individual variability.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">9) The input-output connectional organization of the cortical-thalamic-basal ganglia network and its molecular underpinnings</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study constructs a comprehensive cortical-thalamic-basal ganglia (BG) connectome in the mouse brain, integrating large-scale viral tracing and spatial transcriptomics to reveal a hierarchical, modular organization of sensorimotor, cognitive, and emotional processing networks. By mapping cell-type-specific input-output pathways, the findings provide a high-resolution atlas of circuit architecture and molecular underpinnings, offering insights into the functional organization of the cortical-thalamic-BG system.</p>
+          
+        </div>
+        </div></section>
+
+    <section style="margin: 3rem 0;">
+      <h2 style="font-size: 1.6rem; color: #1a237e;">Multi-scale Integration & Network Mapping</h2>
+      <h3 style="font-size: 1.2rem; color: #303f9f;">Multi-scale Integration</h3>
+      <p style="font-size: 0.95rem; color: #444;">Paper [10]  introduces a scalable methodology for mapping whole-brain single-neuron connectivity by integrating multiple scales of analysis. It generates complementary connectomes through cross-validation of multi-scale data, bridging the gap between whole-brain projections and individual neuron connectivity to provide a comprehensive view of neural circuits. </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">10) Reconstruct a Connectome of Single Neurons in Mouse Brains by Cross-Validating Multi-Scale Multi-Modality Data</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study presents a scalable method to map whole-brain single-neuron connectivity in mice, generating two complementary connectomes (arbor-net and bouton-net) that reveal spatially and anatomically modular networks aligned with brain function. The resulting SEU-net connectome shows strong correlations with gene co-expression and highlights non-random subnetwork patterns, offering new insights into brain network organization.</p>
+          
+        </div>
+        </div></section>
+
+    <section style="margin: 3rem 0;">
+      <h3 style="font-size: 1.2rem; color: #303f9f;">Network Mapping</h3>
+      <p style="font-size: 0.95rem; color: #444;">Papers [11, 12]  characterize brain network organization through detailed analysis of neuronal diversity and connectivity. Using whole-brain morphometry and pathway tracing, they analyze millions of brain voxels at single-cell resolution to map structural patterns and identify distinct subnetworks within regions like the anterior thalamic nuclei.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">11) Neuronal diversity and stereotypy at multiple scales through whole brain morphometry </h4>
+          <p style="font-size: 0.9rem; color: #555;">This large-scale whole-brain morphometry study analyzes 3.7 peta-voxels of mouse brain images at single-cell resolution, creating one of the largest multi-morphometry databases to date. It characterizes 182,497 neuronal cell bodies, dendritic microenvironments, full neuron morphology, and axonal motifs, providing valuable insights into neuronal diversity across multiple scales and contributing a key resource for understanding mammalian brain organization.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">12) Distinct subnetworks of the mouse anterior thalamic nuclei</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study systematically maps neuron types in the anterior thalamic nuclei (ATN), revealing distinct connectional subnetworks that mediate interactions between the prefrontal cortex, hippocampus, and amygdala. By integrating pathway tracing, genetic labeling, and high-resolution imaging, the findings refine our understanding of the Papez circuit and its role in coordinating cognitive and emotional aspects of goal-directed behavior.</p>
+          
+        </div>
+        </div></section>
+
+    <section style="margin: 3rem 0;">
+      <h2 style="font-size: 1.6rem; color: #1a237e;">Single Neuron Morphology & Connectivity</h2>
+      <h3 style="font-size: 1.2rem; color: #303f9f;">Morphological Analysis</h3>
+      <p style="font-size: 0.95rem; color: #444;">Papers [13, 14]  create detailed morphological characterizations of specific neuron types, establishing reference atlases for cell-type identification. Using light-sheet tomography, machine learning, and large-scale analysis, they map region-specific pyramidal neuron morphologies in the cortex and spatial organization of D1/D2 neurons in the striatum, revealing area-specific dendritic patterns.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">13) Mouse brain atlas of cortical pyramidal neuron morphology</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study employs Oblique Light-Sheet Tomography and machine learning to map and analyze region-specific, layer-based pyramidal neuron morphologies across the mouse cortex, linking structural differences to sensory, motor, and cognitive functions.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">14) Dendritome Mapping Unveils Spatial Organization of Striatal D1/D2-Neuron Morphology</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study presents a pipeline for large-scale analysis of dendritic morphology in genetically-defined neurons, revealing distinct striatal D1/D2-medium spiny neuron (MSN) morphologies, aging-related defects, and Huntington's disease-associated dendritic pathologies.</p>
+          
+        </div>
+        </div></section>
+
+    <section style="margin: 3rem 0;">
+      <h3 style="font-size: 1.2rem; color: #303f9f;">Multi-modal Classification (Molecular, Structrue, and Connectivity)</h3>
+      <p style="font-size: 0.95rem; color: #444;">Papers [15, 16, 17, 18]  integrate multiple data modalities to define neuronal subtypes, establishing frameworks for comprehensive cell-type classification. By combining molecular profiling, morphological analysis, and connectivity mapping, they link transcriptomic signatures with structural features and projection patterns, revealing connectivity-based cell types across brain regions. </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">15) Light microscopy based approach for mapping connectivity with molecular specificity</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study introduces spectral connectomics, a light microscopy approach that combines multicolor labeling and expansion microscopy to simultaneously analyze cell type-specific morphology, molecular markers, and connectivity, offering a new method for studying neuroanatomy and synaptic connections.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">16) Neuronal Connectivity As a Determinant of Cell Types and Subtypes</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study creates a large-scale connectivity map of 20,158 mouse neurons, defining connectivity-based subtypes (c-types) across 31 brain regions, revealing that connectivity patterns provide a distinct characterization of neuron diversity and modular brain organization beyond morphological, transcriptomic, and electrophysiological classifications.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">17) Connecting single-cell transcriptomes to projectomes in mouse visual cortex</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study integrates Patch-seq and whole-brain morphology data to define 16 morpho-electric-transcriptomic (MET) neuron types in the mouse visual cortex, linking transcriptomic identity to morphology, electrophysiology, and projection targets for a comprehensive excitatory neuron taxonomy.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">18) Brain Structural Organization Revealed by Unbiased Cell-Type Distribution Clustering</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study maps the distribution of 30 cell types across the mouse brain using single-cell resolution imaging and computational analysis, revealing distinct cell-type composition signatures that refine anatomical boundaries and suggest a link between cell distribution and brain function.</p>
+          
+        </div>
+        </div></section>
+
+    <section style="margin: 3rem 0;">
+      <h2 style="font-size: 1.6rem; color: #1a237e;">Common Coordinate Framework</h2>
+      <h3 style="font-size: 1.2rem; color: #303f9f;">Brain Atlas Development & Reference Frameworks</h3>
+      <p style="font-size: 0.95rem; color: #444;">Papers [19, 20]  establish standardized reference systems for integrating diverse neuroanatomical data. They create high-resolution 3D atlases of early postnatal mouse brain development and introduce next-generation multimodal coordinate frameworks that integrate Nissl staining for improved cytoarchitectural registration, providing essential infrastructure for spatial alignment. </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">19) epDevAtlas: Mapping GABAergic cells and microglia in postnatal mouse brains</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study creates high-resolution 3D atlases of early postnatal mouse brain development, quantifying regional volumetric growth and cell-type density changes, with a focus on GABAergic neurons, cortical interneurons, and microglia, and provides an open-access platform for visualizing developmental atlases.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">20) A next generation multimodal, multi-scale Common Coordinate Framework for the Mouse Brain</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study introduces the next-generation Common Coordinate Framework (CCF-Nissl V4) for mouse brains, integrating Nissl staining for cytoarchitecture, MRI and CT imaging for volumetric structure, and computational methods for dynamic cortical boundary determination, addressing limitations of previous atlases while accounting for individual anatomical variation.</p>
+          
+        </div>
+        </div></section>
+
+    <section style="margin: 3rem 0;">
+      <h2 style="font-size: 1.6rem; color: #1a237e;">Technology Development</h2>
+      <h3 style="font-size: 1.2rem; color: #303f9f;">Microscopy & Imaging Systems</h3>
+      <p style="font-size: 0.95rem; color: #444;">Paper [21] introduces an innovative parallel-line scanning confocal microscope (PALIScope) and a scalable network-distributed image acquisition/processing framework (SNDiF) that enabling continuous acquisition of high-resolution 3D images at petabyte scale in days for comprehensive morphology annotation and circuit mapping. </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">21) A parallelly distributed microscope and software system for scalable high-throughput multispectral 3D imaging</h4>
+          <p style="font-size: 0.9rem; color: #555;">We developed a parallel-line scanning confocal microscope (PALIScope) achieving 1.1 Gigavoxels/second throughput across three spectral channels with nanoscale resolution, combined with a scalable network-distributed image acquisition/processing framework (SNDiF) for continuous capture, real-time processing, and cluster storage of petabyte-scale single image datasets in days.</p>
+          
+        </div>
+        </div></section>
+
+
+    <section style="margin: 3rem 0;">
+      <h3 style="font-size: 1.2rem; color: #303f9f;">Cross-Species Registration & Alignment</h3>
+      <p style="font-size: 0.95rem; color: #444;">Papers [22, 23, 24, 25]  develop computational frameworks for aligning neuroanatomical data across different species, modalities, and reference systems. They establish detailed correspondences between mouse and marmoset brain structures and create algorithms for aligning molecular-scale transcriptomics with tissue-scale atlases, enabling comparative neuroscience approaches. </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">22) Establishing neuroanatomical correspondences across mouse and marmoset brain structures</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study proposes a framework for comparing mouse and marmoset brain architectures by establishing detailed correspondences between their atlas compartments, revealing complex mappings and providing a computational tool for visualizing and querying these relationships.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">23) Topological Skeletonization and Tree-Summarization of Neurons Using Discrete Morse Theory</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study introduces a novel approach to analyzing tree-like neuronal shapes using Discrete Morse Theory, which is well-suited for extracting and summarizing neuronal skeletons from volumetric brain image data. By utilizing a consensus tree-shape derived from tracer-labeled neurons, the method provides a richer summary than traditional connectivity matrices, offering robustness against local data fluctuations. The DiMorSC software, available on GitHub, implements this technique, allowing for efficient handling of large datasets using a divide-and-conquer strategy.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">24) A Universal Method for Crossing Molecular and Atlas Modalities using Simplex-Based Image Varifolds and Quadratic Programming</h4>
+          <p style="font-size: 0.9rem; color: #555;">This paper presents an algorithm that aligns molecular-scale spatial transcriptomics with tissue-scale atlases by jointly optimizing coordinate transformations and latent transcriptomic distributions, enabling the integration of diverse molecular and cellular datasets into a unified framework.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">25) Cross-species Mapping of Generalizable Brain Atlas Derived from Single Cell Morphology</h4>
+          <p style="font-size: 0.9rem; color: #555;">We refined mouse brain atlasing by analyzing 201,001 somata and local dendrites, revealing coherent brain regions based on structural tessellation rather than soma density, and registered these regions to tree shrew and macaque brains to create a generalizable mammalian brain atlas for single-cell analysis.</p>
+          
+        </div>
+        </div></section>
+
+    <section style="margin: 3rem 0;">
+      <h3 style="font-size: 1.2rem; color: #303f9f;">Computational Methods & Tools</h3>
+      <p style="font-size: 0.95rem; color: #444;">Papers [26, 27]  introduce sophisticated computational approaches for standardized brain mapping and multimodal data integration. They showcase ecosystems like ANTsX for precise spatial mapping and develop non-parametric generative frameworks for registering incomplete data into reference brains, providing algorithmic foundations for consistent analysis. </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">26) The ANTsX Ecosystem for Mapping the Mouse Brain</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study showcases the ANTsX toolkit for precise spatial mapping of the mouse brain, enabling standardized alignment, developmental analysis, and automated neuroanatomical quantification.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">27) Solving the where problem in neuroanatomy: a generative framework with learned mappings to register multimodal, incomplete data into a reference brain</h4>
+          <p style="font-size: 0.9rem; color: #555;">We developed a non-parametric generative framework that addresses the challenge of mapping data from different brain modalities into a common coordinate space, enabling integration across varied contrast mechanisms and scales. This methodology allows for rigorous quantification of local scale changes, individual shape variation, and unification of multi-modal whole-brain light microscopy data into a reference atlas framework, facilitating large-scale integration of brain datasets in neuroscience.</p>
+          
+        </div>
+        </div></section>
+
+    <section style="margin: 3rem 0;">
+      <h3 style="font-size: 1.2rem; color: #303f9f;">Data Management, Visualization & Sharing</h3>
+      <p style="font-size: 0.95rem; color: #444;">Papers [28, 29, 30, 31]  establish infrastructure for standardizing, visualizing, and sharing large-scale neuroanatomical datasets. They introduce tools like standardized SWC format specifications, browser-based visualization platforms, collaborative reconstruction systems, and community repositories, providing the informatics backbone for sustainable data resources.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">28) Online conversion of reconstructed neural morphologies into standardized SWC format</h4>
+          <p style="font-size: 0.9rem; color: #555;">This report presents a standardized specification for the SWC file format, widely used for neural morphology reconstruction, and introduces xyz2swc, a free online service that converts 26 reconstruction formats (and 72 variations) into the SWC standard. Available through a user-friendly browser interface and API, xyz2swc facilitates the interoperability and reusability of neural data, addressing format heterogeneity in the neuroinformatics community.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">29) nTracer2 - a browser-based visualization, annotation, and analysis platform for petabyte-scale multispectral 3D images</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study introduces a scalable platform with a new image storage format (SISF) and a cloud-based software (nTracer2) for fast, random access and annotation of high-throughput 3D microscopy data, facilitating neuron morphology analysis in web browsers.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">30) Collaborative augmented reconstruction of 3D neuron morphology in mouse and human brains</h4>
+          <p style="font-size: 0.9rem; color: #555;">This study introduces the Collaborative Augmented Reconstruction (CAR) platform, which combines AI-based automation with group intelligence to enable efficient, scalable, and interactive neuron reconstruction across various devices.</p>
+          
+        </div>
+        
+        <div style="background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" data-aos="fade-up">
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; color: #1a237e;">31) The Brain Image Library: A Community-Contributed Microscopy resource for Neuroscientists.</h4>
+          <p style="font-size: 0.9rem; color: #555;">The Brain Image Library (BIL) is a public resource offering a centralized repository for brain microscopy data, enabling the neuroscience community to explore, visualize, and access thousands of datasets without the need for downloading. This platform supports scientific discovery and data reuse by providing an integrated ecosystem for analysis, overcoming the challenges of data storage and sharing in large-scale brain imaging projects.</p>
+          
+        </div>
+        </div></section>
+
+
+
+  </main>
+
+  <footer style="background: #111; color: #ccc; padding: 2rem 1rem; font-size: 0.9rem;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; text-align: center;">
+
+    
+    <div style="flex: 1 1 300px;">
+      <p style="margin: 0; font-weight: 500;">
+        © 2025 BICCN Anatomy. All rights reserved.
+      </p>
+    </div>
+
+    
+    <div style="flex: 1 1 300px; text-align: center;">
+      <a href="https://github.com/ppmitra/BICCN-Anatomy-Paper-Package" target="_blank" style="color: #ccc; margin: 0 0.75rem; text-decoration: none;">GitHub</a>
+      <a href="/privacy/" style="color: #ccc; margin: 0 0.75rem; text-decoration: none;">Privacy</a>
+      <a href="/contact/" style="color: #ccc; margin: 0 0.75rem; text-decoration: none;">Contact</a>
+    </div>
+
+  </div>
+</footer>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toggles = document.querySelectorAll(".toggle-header");
+  toggles.forEach((header) => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      content.style.display = content.style.display === "none" ? "block" : "none";
+      header.classList.toggle("open");
+    });
+  });
+});
+</script>
+<style>
+.toggle-header {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background: #f4f4f4;
+  border-left: 6px solid #007acc;
+  margin: 1.5rem 0 0.5rem;
+  font-weight: bold;
+}
+.toggle-header.open {
+  background: #e0f0ff;
+}
+.toggle-content {
+  display: none;
+  padding: 0.5rem 1rem;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+</style>
+
+
+</body>
+</html>

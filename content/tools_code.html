@@ -1,0 +1,141 @@
+---
+title: "🛠️ Tools & Code"
+layout: "single"
+---
+
+<!-- AOS Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+
+<style>
+  .tools-container {
+    padding: 2rem 0;
+  }
+
+  .section-title {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: #1a237e;
+    text-align: center;
+  }
+
+  .tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .tool-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+  }
+
+  .tool-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .tool-card h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    color: #303f9f;
+  }
+
+  .tool-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .tool-card li {
+    margin-bottom: 0.5rem;
+    color: #444;
+  }
+
+  .tool-card a {
+    color: #0d47a1;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .tool-card a:hover {
+    text-decoration: underline;
+  }
+
+  .tool-links {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .tool-links a {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 0.7rem 1.4rem;
+    background: #1a237e;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+
+  .tool-links a:hover {
+    background: #303f9f;
+  }
+</style>
+
+<div class="tools-container">
+
+  <h1 class="section-title">Code Resources</h1>
+
+  <div class="tool-grid">
+
+    <div class="tool-card" data-aos="fade-up">
+      <h3>Data Portals</h3>
+      <ul>
+        <li><a href="https://neuroxiv.org" target="_blank">NeuroXiv.org</a></li>
+        <li><a href="https://hortacloud.janelia.org" target="_blank">HortaCloud by Janelia</a></li>
+        <li><a href="https://brainarchitecture.org" target="_blank">Brain Architecture Portal</a></li>
+      </ul>
+    </div>
+
+    <div class="tool-card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Registration Framework</h3>
+      <ul>
+        <li>Data preprocessing scripts</li>
+        <li>Registration algorithms</li>
+        <li>Validation tools</li>
+      </ul>
+    </div>
+
+    <div class="tool-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Analysis Tools</h3>
+      <ul>
+        <li>Statistical analysis scripts</li>
+        <li>Visualization utilities</li>
+        <li>Data processing pipelines</li>
+      </ul>
+    </div>
+
+    <div class="tool-card" data-aos="fade-up" data-aos-delay="300">
+      <h3>Data Processing Tools</h3>
+      <ul>
+        <li>Feature extraction utilities</li>
+        <li>Segmentation helpers</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="tool-links">
+    <a href="#">View Code Documentation</a>
+    <a href="#">GitHub Repository</a>
+  </div>
+
+</div>

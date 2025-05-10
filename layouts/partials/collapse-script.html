@@ -1,0 +1,32 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toggles = document.querySelectorAll(".toggle-header");
+  toggles.forEach((header) => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      content.style.display = content.style.display === "none" ? "block" : "none";
+      header.classList.toggle("open");
+    });
+  });
+});
+</script>
+<style>
+.toggle-header {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background: #f4f4f4;
+  border-left: 6px solid #007acc;
+  margin: 1.5rem 0 0.5rem;
+  font-weight: bold;
+}
+.toggle-header.open {
+  background: #e0f0ff;
+}
+.toggle-content {
+  display: none;
+  padding: 0.5rem 1rem;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+</style>

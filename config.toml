@@ -1,0 +1,40 @@
+theme = "ananke"
+baseURL = "http://braincircuits.info/"
+title = "BICCN Anatomy"
+languageCode = "en-us"
+
+[params]
+  description = "XYZ Anatomy Package Website"
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Papers"
+    url = "/papers/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Data Links"
+    url = "/data/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Tools & Code"
+    url = "/tools_code/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Use Cases"
+    url = "/use-cases/"
+    weight = 5
+    
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+

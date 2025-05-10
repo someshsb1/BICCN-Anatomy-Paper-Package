@@ -1,0 +1,38 @@
+{{ $src := .Get "src" }}
+{{ $csv := resources.Get $src | transform.Unmarshal }}
+
+<pre>{{ printf "%#v" (index $csv 0) }}</pre>
+
+
+{{/* Group by Resource Type */}}
+{{ $groups := dict }}
+{{ range $csv }}
+  {{ $key := index . "Resource Type (summary may or may not go into the main text)" }}
+  {{ if $key }}
+    {{ $current := index $groups $key | default (slice) }}
+    {{ $groups = merge $groups (dict $key (append $current .)) }}
+  {{ end }}
+{{ end }}
+
+<div style="width: 100%; padding: 1rem;">
+  {{ range $title, $entries := $groups }}
+    <details open style="margin-bottom: 2rem; border: 1px solid #ccc; border-radius: 8px;">
+      <summary style="font-size: 1.5rem; font-weight: bold; background: #f9f9f9; padding: 1rem; cursor: pointer; color: #007acc;">
+        {{ $title }}
+      </summary>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; padding: 1.5rem;">
+        {{ range $entries }}
+          <div style="background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 12px; padding: 1rem;">
+            <p><strong>Sub Category:</strong> {{ index . "Sub Category" }}</p>
+            <p><strong>Methods & Outcomes:</strong><br> {{ index . "Whole consortium-level collective methods and scientific outcomes" }}</p>
+            <p><strong>Paper:</strong><br> {{ index . "Paper" }}</p>
+            <p><strong>Summary of Findings:</strong><br> {{ index . "Summary of Findings" }}</p>
+            {{ with (index . "Resource Link") }}
+              <p><strong>Resource Link:</strong><br> <a href="{{ . }}" target="_blank">{{ . }}</a></p>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </details>
+  {{ end }}
+</div>

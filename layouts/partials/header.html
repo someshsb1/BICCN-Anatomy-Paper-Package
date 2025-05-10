@@ -1,0 +1,31 @@
+<style>
+  .nav-link {
+    color: #fff;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Rockwell', sans-serif;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #ff4081;
+  }
+</style>
+
+<header style="background: #111; padding: 1rem 2rem; position: sticky; top: 0; z-index: 999;">
+  <nav style="display: flex; justify-content: space-between; align-items: center; max-width: 100%; margin: 0 auto;">
+<div style="display: flex; align-items: center;">
+  <a href="/" style="display: flex; align-items: center;">
+    <img src="/images/brain_architecture_logo_white.svg" alt="Brain Architecture Project" style="height: 60px;"/>
+  </a>
+</div>
+    <div>
+      <a href="/" class="nav-link {{ if eq .RelPermalink "/" }}active{{ end }}">Home</a>
+      <a href="/papers/" class="nav-link {{ if eq .RelPermalink "/papers/" }}active{{ end }}">Papers</a>
+      <a href="/data/" class="nav-link {{ if eq .RelPermalink "/data/" }}active{{ end }}">Data</a>
+      <a href="/tools_code/" class="nav-link {{ if eq .RelPermalink "/tools_code/" }}active{{ end }}">Tools</a>
+      <a href="/usecases/" class="nav-link {{ if eq .RelPermalink "/usecases/" }}active{{ end }}">Use Cases</a>
+    </div>
+  </nav>
+</header>
