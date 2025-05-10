@@ -1,5 +1,5 @@
 theme = "ananke"
-baseURL = "http://braincircuits.info/"
+baseURL = "https://someshsb1.github.io/BICCN-Anatomy-Paper-Package/"
 title = "BICCN Anatomy"
 languageCode = "en-us"
 
@@ -38,3 +38,4 @@ languageCode = "en-us"
     [markup.goldmark.renderer]
       unsafe = true
 
+publishDir = "docs"
