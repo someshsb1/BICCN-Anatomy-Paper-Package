@@ -21,11 +21,11 @@
   </a>
 </div>
     <div>
-      <a href="/" class="nav-link {{ if eq .RelPermalink "/" }}active{{ end }}">Home</a>
-      <a href="/papers/" class="nav-link {{ if eq .RelPermalink "/papers/" }}active{{ end }}">Papers</a>
-      <a href="/data/" class="nav-link {{ if eq .RelPermalink "/data/" }}active{{ end }}">Data</a>
-      <a href="/tools_code/" class="nav-link {{ if eq .RelPermalink "/tools_code/" }}active{{ end }}">Tools</a>
-      <a href="/usecases/" class="nav-link {{ if eq .RelPermalink "/usecases/" }}active{{ end }}">Use Cases</a>
+      <a href="{{ "/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/" }}active{{ end }}">Home</a>
+      <a href="{{ "/papers/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/papers/" }}active{{ end }}">Papers</a>
+      <a href="{{ "/data/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/data/" }}active{{ end }}">Data</a>
+      <a href="{{ "/tools_code/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/tools_code/" }}active{{ end }}">Tools</a>
+      <a href="{{ "/usecases/" | relURL }}" class="nav-link {{ if eq .RelPermalink "/usecases/" }}active{{ end }}">Use Cases</a>
     </div>
   </nav>
 </header>
