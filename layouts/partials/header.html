@@ -17,15 +17,16 @@
   <nav style="display: flex; justify-content: space-between; align-items: center; max-width: 100%; margin: 0 auto;">
 <div style="display: flex; align-items: center;">
 <a href="{{ "/BICCN-Anatomy-Paper-Package/" | absURL }}" style="display: flex; align-items: center;">
-  <img src="{{ "images/brain_architecture_logo_white.svg" | absURL }}" alt="Brain Architecture Project" style="height: 60px;" />
+<img src="{{ "images/brain_architecture_logo_white.svg" | absURL }}" alt="Brain Architecture Project" />
 </a>
 </div>
     <div>
-      <a href="{{ "/BICCN-Anatomy-Paper-Package/" | absURL }}" class="nav-link {{ if eq .RelPermalink "/" }}active{{ end }}">Home</a>
-      <a href="{{ "/BICCN-Anatomy-Paper-Package/papers/" | absURL }}" class="nav-link {{ if eq .RelPermalink "/papers/" }}active{{ end }}">Papers</a>
-      <a href="{{ "/BICCN-Anatomy-Paper-Package/data/" | absURL }}" class="nav-link {{ if eq .RelPermalink "/data/" }}active{{ end }}">Data</a>
-      <a href="{{ "/BICCN-Anatomy-Paper-Package/tools_code/" | absURL }}" class="nav-link {{ if eq .RelPermalink "/tools_code/" }}active{{ end }}">Tools</a>
-      <a href="{{ "/BICCN-Anatomy-Paper-Package/usecases/" | absURL }}" class="nav-link {{ if eq .RelPermalink "/usecases/" }}active{{ end }}">Use Cases</a>
+<a href="{{ "/" | absURL }}" class="nav-link {{ if eq .RelPermalink "/" }}active{{ end }}">Home</a>
+<a href="{{ "papers/" | absURL }}" class="nav-link {{ if eq .RelPermalink "/papers/" }}active{{ end }}">Papers</a>
+<a href="{{ "data/" | absURL }}" class="nav-link {{ if eq .RelPermalink "/data/" }}active{{ end }}">Data</a>
+<a href="{{ "tools_code/" | absURL }}" class="nav-link {{ if eq .RelPermalink "/tools_code/" }}active{{ end }}">Tools</a>
+<a href="{{ "usecases/" | absURL }}" class="nav-link {{ if eq .RelPermalink "/usecases/" }}active{{ end }}">Use Cases</a>
+
     </div>
   </nav>
 </header>
