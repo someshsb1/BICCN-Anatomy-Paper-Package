@@ -1,34 +1,23 @@
 {{ define "main" }}
-  {{ if .Params.featured_image }}
-    <div style="margin-top: -3rem; padding: 0;">
-      <section style="
-        position: relative;
-        width: 100vw;
-        top: 0;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-        height: 45vh;
-        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                    url('{{ .Params.featured_image | relURL }}');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      ">
-        <div style="
-          text-align: center;
-          color: white;
-          padding: 2rem;
-        ">
-          <h1 style="font-size: 3rem; margin: 0;">BICCN Anatomy Package</h1>
-          <p style="font-size: 1.5rem; margin-top: 0.5rem;">Anatomy of brain circuits at cellular scale</p>
-        </div>
-      </section>
+{{ if .Params.featured_image }}
+  <section style="
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('{{ .Params.featured_image | relURL }}');
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;">
+    <div>
+      <h1 style="font-size: 3rem; margin: 0;">BICCN Anatomy Package</h1>
+      <p style="font-size: 1.5rem; margin-top: 0.5rem;">Anatomy of brain circuits at cellular scale</p>
     </div>
-  {{ end }}
+  </section>
+{{ end }}
 
   <main style="width: 100%; padding: 0 3rem; box-sizing: border-box;">
     {{ .Content }}
